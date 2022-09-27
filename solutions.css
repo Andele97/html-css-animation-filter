@@ -91,14 +91,26 @@
   85% {transform: rotate(360deg)}
 }
 
-.ex-12-button:hover .ex-12-top-white.ex-12-bottom-white {
-  animation-name: linea;
+.ex-12-button:hover .ex-12-top-white {
+  animation-name: lineatop;
   animation-duration: 3s;
   animation-timing-function: linear;
 }
 
-@keyframes linea {
+@keyframes lineatop {
   0% {left: 10%;}
-  50% {left: 60px}
+  50% {left: calc(100% - 60px)}
   100% {left: 10%;}
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+  animation-name: lineabottom;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+
+@keyframes lineabottom {
+  0% {right: 10%;}
+  50% {right: calc(100% - 60px)}
+  100% {right: 10%;}
 }
