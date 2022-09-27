@@ -68,3 +68,14 @@
   border-radius: 20px;
   filter: sepia(80%) grayscale(20%);
 }
+
+.ex-10-icon {
+  animation-name: cerchio;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+}
+
+@keyframes cerchio {
+  0% {transform: rotate(350deg);}
+}
