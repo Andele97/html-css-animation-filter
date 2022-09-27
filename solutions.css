@@ -77,5 +77,16 @@
 }
 
 @keyframes cerchio {
-  0% {transform: rotate(350deg);}
+  0% {transform: rotate(360deg)}
+}
+
+.ex-11-icon:hover {
+  animation-name: lento;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes lento {
+  0% {transform: rotate(0)}
+  85% {transform: rotate(360deg)}
 }
